@@ -12,11 +12,12 @@
     angular.module('training').config(['$routeProvider', function($routeProvider) {
 
         $routeProvider
+            .when('/home', {controller:'MainCtrl', templateUrl:'partials/main-partial.html'})
             .when('/users', {controller:'UsersCtrl', templateUrl:'partials/user-list.html'})
             .when('/users/create', {controller:'UsersCreateCtrl', templateUrl:'partials/user-create.html'} )
             .when('/users/edit/:userId', {controller:'UsersEditCtrl', templateUrl:'partials/user-edit.html'})
             .when('/users/login', {controller:'UsersLoginCtrl', templateUrl:'partials/user-login.html'})
-            .otherwise({redirectTo:'/users'});
+            .otherwise({redirectTo:'/'});
     }]);
 
     /*

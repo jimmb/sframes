@@ -25,7 +25,7 @@ server.get('/api/v1/users', middleware.validateAuthN, api.getUsersV1);
 
 /*
  * REST GET : Serving WWW Files
- * NOTE: Must be last server.get(...) declaration
+ * NOTE: Must be last server.get(...) declaration 
  *
  * e.g. http://localhost:8080/docs/public/index.html
  */
